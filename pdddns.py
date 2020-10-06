@@ -3,7 +3,8 @@
 #######################CFG###########################
 #domain = 's0.ud3.ru'
 
-curl = "/usr/bin/curl -s -H 'PddToken: 1234567890ABCDEF1234567890ABCDEF1234567890ABCDEF1234'"
+pddtoken = '1234567890ABCDEF1234567890ABCDEF1234567890ABCDEF1234'
+curl = "/usr/bin/curl -s -H 'PddToken: " + pddtoken + "'"
 pddaddr = 'https://pddimp.yandex.ru'
 pddlist = '/api2/admin/dns/list?domain='
 pddadd = '/api2/admin/dns/add'
